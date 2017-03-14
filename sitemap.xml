@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>http://proglife-quentin.fr/</loc>
+    <lastmod>2016-12-20</lastmod> <!-- informe de la date de la dernière modification du fichier/page -->
+    <changefreq>daily</changefreq> <!-- représente la fréquence de modification de la page -->
+    <priority>1</priority> <!-- représente la priorité d'une page par rapport aux autres du site -->
+  </url>
+  <url>
+    <loc>http://proglife-quentin.fr/html/Projets.html</loc>
+    <lastmod>2016-12-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://proglife-quentin.fr/html/perso.html</loc>
+    <lastmod>2016-12-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://proglife-quentin.fr/html/contact.html</loc>
+    <lastmod>2016-12-20</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.9</priority>
+  </url>
+</urlset>
