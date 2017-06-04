@@ -1,6 +1,12 @@
-function validateEmail($email) {
- var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
- return emailReg.test( $email );
-}
 
-if( !validateEmail(emailaddress)) { /* do stuff here */ }
+function checkEmail() {
+
+    var email = document.getElementById('email');
+    var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+
+    if (!filter.test(email.value)) {
+    alert('Adresse mail invalide');
+    email.focus;
+    return false;
+ }
+}
