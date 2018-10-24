@@ -36,9 +36,9 @@
             <li><a href="Veille.html">Veille Technologique</a></li>
             <li><a href="TC.html">Tableau de compétences</a></li>-->
             <li><a href="perso.html">Personnel</a></li>
+            <li><a href="contact.html">Contact</a></li>
             <!--Ici on indique que l'icome de la page courante est celle active(donc grisée)-->
-            <li class="active"><a href="contact.html">Contact<span class="sr-only">(current)</span></a></li>
-            <li><a href="minichat.php">Chat</a></li>
+            <li class="active"><a href="minichat.php">Chat<span class="sr-only">(current)</span></a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
@@ -46,43 +46,39 @@
   </div>
  <div class="row">
   <div class="col-lg-offset-2 col-lg-8 col-lg-offset-2">
-    <legend id = "legend">Pour me contacter</legend>
-    <p id = "contact">
-   <iframe src="../src/doc/cv/CV.pdf" width="800" height="600" align="middle"></iframe>
-   <p/>
-   <div class="FormMail">
-     <form class="formMail" action="formmail.php" method="post">
+    <form id="FormChat" action="minichat_post.php" method="post">
+      <label for="pseudo">pseudo</label> <input type="text" name="pseudo" id="pseudo">
+      <label for="message">message</label> <input type="text" name="message" id="message">
 
-       <div class="form-group">
-         <label for="email">E-mail</label>
-         <input type="text" name="email" maxlength="40" class="form-control" id="email" placeholder="e-mail" required="required">
+      <input type="submit" value="Envoyer">
 
-       </div>
-
-       <div class="form-group">
-         <label for="objet">Objet</label>
-         <input type="text" name="objet" maxlength="20" class="form-control" id="objet" placeholder="objet" required="required">
-       </div>
-
-       <div class="form-group">
-          <label for="message">Pourquoi me contactez vous ?</label>
-          <textarea type="text" name="message" class="form-control" id="message" placeholder="Entrez votre texte ici" required="required" rows="4"></textarea>
-        </div>
-
-        <button type="submit" class="btn btn-default" onclick='return checkEmail()' onsubmit="">Envoyer</button>
-        <button type="reset" class="btn btn-default">Annuler</button>
-     </form>
-
+    </form>
    </div>
-
   </div>
-
 </div>
 
+<?php
+// connexion bdd
+try
+{
+  $bdd = new PDO('mysql:host=localhost; dbname=test;charset=utf8', 'root', '');
+}
 
+catch(Exception $e){
+  die('Erreur :'.$e->getMessage());
+}
 
-<script src="../src/js/validatorForm.js" type="text/javascript"></script>
+// recuperation des 10 derniers messages
+$reponse = $bdd->query('SELECT pseudo, message FROM minichat ORDER BY ID DESC LIMIT 0, 10');
 
+// Affichage de chaque message (toute les données sont protégées par htmlspecialchars)
+while ($donnees = $reponse->fetch()) {
+  echo '<p><strong>' . htmlspecialchars($donnees['pseudo']) . '</strong> :'. htmlspecialchars($donnees['message']) . '</p>';
+}
+
+$reponse->closeCursor();
+
+?>
   </body>
 
 </html>

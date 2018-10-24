@@ -56,7 +56,8 @@ html body {
 }
 
 
-/*page index*/
+/*page index
+Id bienvenue*/
 
 #bienvenue {
     font-size: 30px;
@@ -200,38 +201,13 @@ html body {
     font-size: 32px;
 }
 
-#questionPPE {
+
+
+#questionRetro {
     font-size: 30px;
 }
 
-#SiteMairie {
-    padding-right: 50px;
-    white-space: pre-line;
-}
-
-#questionPPE2 {
-    font-size: 30px;
-}
-
-#JavaMairie {
-    padding-right: 50px;
-    white-space: pre-line;
-}
-
-#questionPPE3 {
-    font-size: 30px;
-}
-
-#AndroidMairie {
-    padding-right: 50px;
-    white-space: pre-line;
-}
-
-#questionAGORIZE {
-    font-size: 30px;
-}
-
-#HpSprout {
+#Retro {
     padding-right: 50px;
     white-space: pre-line;
 }
@@ -316,7 +292,8 @@ html body {
     font-size: 32px;
 }
 
-/*Page contact (validatorForm)*/
+/*Page contact (validatorForm)
+Selecteur pour une class*/
 
 .valid {
     background-color: yellowgreen;
@@ -326,4 +303,11 @@ html body {
 .invalid {
   background-color: pink;
   border: 2px red solid;
+}
+
+/*page chat*/
+
+#FormChat{  
+  white-space: pre-line;
+
 }
