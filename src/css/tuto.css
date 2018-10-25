@@ -197,8 +197,8 @@ Id bienvenue*/
 
 /*page ppe*/
 
-#legendPPE {
-    font-size: 32px;
+#questionPPE {
+    font-size: 30px;
 }
 
 
@@ -307,7 +307,7 @@ Selecteur pour une class*/
 
 /*page chat*/
 
-#FormChat{  
+#FormChat{
   white-space: pre-line;
 
 }

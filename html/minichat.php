@@ -47,8 +47,11 @@
  <div class="row">
   <div class="col-lg-offset-2 col-lg-8 col-lg-offset-2">
     <form id="FormChat" action="minichat_post.php" method="post">
-      <label for="pseudo">pseudo</label> <input type="text" name="pseudo" id="pseudo">
-      <label for="message">message</label> <input type="text" name="message" id="message">
+      <label for="pseudo">pseudo :</label>
+      <input type="text" name="pseudo" id="pseudo" value="<?php if(isset($_COOKIE['pseudo'])) echo $_COOKIE['pseudo']; ?>">
+
+      <label for="message">message :</label>
+      <textarea for="message" name="message" id="message" rows="4" ></textarea>
 
       <input type="submit" value="Envoyer">
 
@@ -58,6 +61,7 @@
 </div>
 
 <?php
+error_reporting( E_ALL );
 // connexion bdd
 try
 {
@@ -69,7 +73,7 @@ catch(Exception $e){
 }
 
 // recuperation des 10 derniers messages
-$reponse = $bdd->query('SELECT pseudo, message FROM minichat ORDER BY ID DESC LIMIT 0, 10');
+$reponse = $bdd->query('SELECT pseudo, message FROM utilisateur ORDER BY ID DESC LIMIT 0, 10');
 
 // Affichage de chaque message (toute les données sont protégées par htmlspecialchars)
 while ($donnees = $reponse->fetch()) {
