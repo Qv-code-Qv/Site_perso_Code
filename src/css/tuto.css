@@ -28,113 +28,14 @@ html body {
 
 
 
-
-/*page index
-Id bienvenue*/
-
-#bienvenue {
-    font-size: 30px;
-}
-
-#surSite {
-    font-size: 30px;
-}
-
-#presentation {
-    padding-right: 50px;
-    white-space: pre-line;
-}
-
-#presentationSite {
-    padding-right: 50px;
-    white-space: pre-line;
-}
-
-
-/*page tp*/
-
-#legendReseau {
-    font-size: 32px;
-}
-
-#question1 {
-    font-size: 30px;
-}
-
-#question2 {
-    font-size: 30px;
-}
-
-#question3 {
-    font-size: 30px;
-}
-
-#question4 {
-    font-size: 30px;
-}
-
-#question5 {
-    font-size: 30px;
-}
-
-#ServerWeb {
-    padding-right: 50px;
-    white-space: pre-line;
-}
-
-#ControleurDomaine {
-    padding-right: 50px;
-    white-space: pre-line;
-}
-
-#SystemeReseau {
-    padding-right: 50px;
-    white-space: pre-line;
-}
-
-#dhcp {
-    padding-right: 50px;
-    white-space: pre-line;
-}
-
-
-
-
-
-/*page ppe*/
-
-#questionPPE {
-    font-size: 30px;
-}
-
-
-
-#questionRetro {
-    font-size: 30px;
-}
-
-#Retro {
-    padding-right: 50px;
-    white-space: pre-line;
-}
-
-
-
-
 /*page perso*/
 
 #legendPerso {
     font-size: 32px;
 }
 
-#QPerso1 {
-    font-size: 30px;
-}
 
-#drone {
-    padding-right: 50px;
-    white-space: pre-line;
-}
+
 
 
 /*page contact*/

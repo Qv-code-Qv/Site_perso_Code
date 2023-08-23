@@ -4,9 +4,9 @@
    // Masquage des réponses
    $(".reponse").hide();
    // CSS : curseur pointeur
-   $(".question").css("cursor", "pointer");
+   $(".title").css("cursor", "pointer");
    // Clic sur la question
-   $(".question").click(function() {
+   $(".title").click(function() {
      // Actions uniquement si la réponse n'est pas déjà visible
      if($(this).next().is(":visible") == false) {
        // Masquage des réponses

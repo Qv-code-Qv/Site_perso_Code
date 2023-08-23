@@ -5,6 +5,8 @@
     <title>proglife-quentin</title>
     <link href="../src/css/bootstrap.min.css" rel="stylesheet">
     <link href="../src/css/tuto.css" rel="stylesheet">
+    <link href="../src/css/style.scss" rel="stylesheet">
+
   </head>
 
 <body>
@@ -48,28 +50,33 @@
   </div>
  <div class="row">
   <div class="col-lg-offset-2 col-lg-8 col-lg-offset-2">
-    <p>
+   
     <legend id="legendPerso">Personnel</legend>
+    <p class="content">
+      <ul> <!-- dl : élément structurel annonçant et encadrant une liste de définitions.-->
+        <h1 class="title">Les drones</h1> <!-- dt :élément contenant le terme à définir. -->
+    
+        <li class="reponse" id="drone">
+          definition ( Wikipedia) :
+          « Un drone, ou UAV est un aérodyne télécommandé qui emporte une charge utile, destinée à des missions de surveillance, de renseignement, de combat ou de transport. »
+    
+          J'ai eu l'occasion avec un ami d'aller voir une association où des personnes passionnés fabriquent des drones.
+          Cela est interessant car c'est l'avenir, beaucoup de sociétés pensent aux drones pour le transport de colis, ça ce démocratise peu à peu avec les nouvelles technologies qui deviennent à porté de tous comme les imprimantes 3D.
+    
+          <video
+             src="../src/videos/drones.mp4" width="300" height="200"
+             class="video" id="video" controls="controls">
+          </video>
+       <span id="play_pause"></span>
+    
+        </li>
+      </ul>
+
     </p>
-    <p>
-  <ul> <!-- dl : élément structurel annonçant et encadrant une liste de définitions.-->
-    <h1 class="question" id="QPerso1">Les drones</h1> <!-- dt :élément contenant le terme à définir. -->
-    <li class="reponse" id="drone">
-      definition ( Wikipedia) :
-      « Un drone, ou UAV est un aérodyne télécommandé qui emporte une charge utile, destinée à des missions de surveillance, de renseignement, de combat ou de transport. »
+    
 
-      J'ai eu l'occasion avec un ami d'aller voir une association où des personnes passionnés fabriquent des drones.
-      Cela est interessant car c'est l'avenir, beaucoup de sociétés pensent aux drones pour le transport de colis, ça ce démocratise peu à peu avec les nouvelles technologies qui deviennent à porté de tous comme les imprimantes 3D.
-
-      <video
-         src="../src/videos/drones.mp4" width="300" height="200"
-         class="video" id="video" controls="controls">
-      </video>
-   <span id="play_pause"></span>
-
-    </li>
-  </ul>
-  <p/>
+  
+  
   </div>
 </div>
 
