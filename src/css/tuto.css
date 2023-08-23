@@ -12,12 +12,7 @@ html body {
     background-size: cover;
 }
 
-/*footer {
-    background: #4C5858;
-    height: 100%;
-    color: white;
-    padding-top: 22px;
-}*/
+
 
 #couleur li:hover {
     background-color: gray;
@@ -31,29 +26,7 @@ html body {
     background-color: #F9FFFF;
 }
 
-@media (min-width: 768px) {
-    .container {
-        width: 768px;
-    }
-}
 
-@media (min-width: 992px) {
-    .container {
-        width: 992px;
-    }
-}
-
-@media (min-width: 1200px) {
-    .container {
-        width: 1200px;
-    }
-}
-
-@media(min-width:1600px) {
-    .container {
-        width: 1600px;
-    }
-}
 
 
 /*page index
@@ -125,74 +98,7 @@ Id bienvenue*/
 }
 
 
-/*page sp */
 
-
-/*
-
-#legendSP{
-  font-size: 32px;
-}
-
-#questionSP1{
-  font-size: 30px;
-}
-
-#questionSP2{
-  font-size: 30px;
-}
-
-#questionSP3{
-  font-size: 30px;
-}
-
-#questionSP4{
-  font-size: 30px;
-}
-
-#questionSP5{
-  font-size: 30px;
-}
-
-#questionSP6{
-  font-size: 30px;
-}
-#PrepaPoste{
-  padding-right: 50px;
-  white-space:pre-line;
-
-}
-
-#AD{
-  padding-right: 50px;
-  white-space:pre-line;
-
-}
-
-#glpi{
-  padding-right: 50px;
-  white-space:pre-line;
-
-}
-
-
-#script{
-  padding-right: 50px;
-  white-space:pre-line;
-
-}
-
-#DevWebJava1{
-  padding-right: 50px;
-  white-space:pre-line;
-
-}
-
-#DevWebJava2{
-  padding-right: 50px;
-  white-space:pre-line;
-
-} */
 
 
 /*page ppe*/
@@ -213,55 +119,6 @@ Id bienvenue*/
 }
 
 
-/*page veille*/
-
-
-/*
-
-#legendV{
-  font-size: 32px;
-}
-
-#QV{
-  font-size: 30px;
-}
-
-#QV1{
-  font-size: 30px;
-}
-
-#QV2{
-  font-size: 30px;
-}
-
-#QV3{
-  font-size: 30px;
-}
-
-
-#CarteMere{
-  padding-right: 50px;
-  white-space:pre-line;
-
-}
-
-#TechDays{
-  padding-right: 50px;
-  white-space:pre-line;
-
-}
-
-#LinuxWindows{
-  padding-right: 50px;
-  white-space:pre-line;
-
-}
-
-#VeilleInfo{
-  padding-right: 50px;
-  white-space:pre-line;
-
-} */
 
 
 /*page perso*/
@@ -310,4 +167,30 @@ Selecteur pour une class*/
 #FormChat{
   white-space: pre-line;
 
+}
+
+
+
+@media (min-width: 768px) {
+    .container {
+        width: 768px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 992px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1200px;
+    }
+}
+
+@media(min-width:1600px) {
+    .container {
+        width: 1600px;
+    }
 }
