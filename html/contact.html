@@ -5,6 +5,8 @@
     <title>proglife-quentin</title>
     <link href="../src/css/bootstrap.min.css" rel="stylesheet">
     <link href="../src/css/tuto.css" rel="stylesheet">
+    <link href="../src/css/style.scss" rel="stylesheet">
+
   </head>
 <body>
   <header id="top">
@@ -31,14 +33,9 @@
           <ul class="nav navbar-nav" id="couleur">
             <li><a href="../index.html">Accueil</a></li>
             <li><a href="Projets.html">Projets</a></li>
-            <!--<li><a href="TP.html">TP</a></li>
-            <li><a href="SP.html">Situations Professionnelles</a></li>
-            <li><a href="Veille.html">Veille Technologique</a></li>
-            <li><a href="TC.html">Tableau de compétences</a></li>-->
             <li><a href="perso.html">Personnel</a></li>
             <!--Ici on indique que l'icome de la page courante est celle active(donc grisée)-->
             <li class="active"><a href="contact.html">Contact<span class="sr-only">(current)</span></a></li>
-            <li><a href="minichat.php">Chat</a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
@@ -46,10 +43,10 @@
   </div>
  <div class="row">
   <div class="col-lg-offset-2 col-lg-8 col-lg-offset-2">
-    <legend id = "legend">Pour me contacter</legend>
-    <p id = "contact">
+    <legend class = "legend">Pour me contacter</legend>
+
    <iframe src="../src/doc/cv/CV.pdf" width="800" height="600" align="middle"></iframe>
-   <p/>
+
    <div class="FormMail">
      <form class="formMail" action="formmail.php" method="post">
 
