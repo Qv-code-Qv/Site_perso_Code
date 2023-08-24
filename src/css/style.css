@@ -35,6 +35,11 @@ html body {
   height: 50px;
 }
 
+.img-profile {
+  width: 100px;
+  height: 100px;
+}
+
 .legend {
   font-size: 32px;
 }
