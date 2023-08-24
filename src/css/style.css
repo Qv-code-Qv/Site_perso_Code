@@ -1,71 +1,58 @@
-
 #banniere {
-    width: 100%;
+  width: 100%;
 }
 
 #image2 {
-    float: right;
+  float: right;
 }
 
 html body {
-    background-image: url("../img/Background.jpg");
-    width: 100%;
-    background-size: cover;
+  background-image: url("../img/Background.jpg");
+  width: 100%;
+  background-size: cover;
 }
 
-
-
 #couleur li:hover {
-    background-color: gray;
+  background-color: gray;
 }
 
 #couleur li a {
-    color: black;
+  color: black;
 }
 
 #couleurnav {
-    background-color: #F9FFFF;
+  background-color: #F9FFFF;
 }
-
-
 
 /**refactoring en scss***/
-
-
-.title{
-    font-size: 30px;
-
+.title {
+  font-size: 30px;
 }
 
-.content{
-     padding-right: 50px;
-     white-space: pre-line;
+.content {
+  padding-right: 50px;
+  white-space: pre-line;
 }
 
 .img {
-    width : 80px;
-    height : 50px;
-    }
+  width: 80px;
+  height: 50px;
+}
 
 .legend {
-    font-size: 32px;
+  font-size: 32px;
 }
 
 /*page projets*/
-
-.reponse{
-     white-space: pre-line;
+.reponse {
+  white-space: pre-line;
 }
-
-
-
 
 /*Page contact (validatorForm)
 Selecteur pour une class*/
-
 .valid {
-    background-color: yellowgreen;
-    border: 2px green solid;
+  background-color: yellowgreen;
+  border: 2px green solid;
 }
 
 .invalid {
@@ -73,33 +60,23 @@ Selecteur pour une class*/
   border: 2px red solid;
 }
 
-
-
-
-
 @media (min-width: 768px) {
-    .container {
-        width: 768px;
-    }
+  .container {
+    width: 768px;
+  }
 }
-
 @media (min-width: 992px) {
-    .container {
-        width: 992px;
-    }
+  .container {
+    width: 992px;
+  }
 }
-
 @media (min-width: 1200px) {
-    .container {
-        width: 1200px;
-    }
+  .container {
+    width: 1200px;
+  }
 }
-
-@media(min-width:1600px) {
-    .container {
-        width: 1600px;
-    }
-}
-
-
-
+@media (min-width: 1600px) {
+  .container {
+    width: 1600px;
+  }
+}/*# sourceMappingURL=style.css.map */
