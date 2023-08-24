@@ -1,3 +1,10 @@
+$yellowgreen: yellowgreen;
+$green: green;
+$pink: pink; 
+$red : red;
+$gray: gray;
+$black: black;
+$F9FFFF: #F9FFFF;
 
 .img-responsive {
     width: 100%;
@@ -12,15 +19,15 @@ html body {
 
 
 #couleur li:hover {
-    background-color: gray;
+    background-color: $gray;
 }
 
 #couleur li a {
-    color: black;
+    color: $black;
 }
 
 #couleurnav {
-    background-color: #F9FFFF;
+    background-color: $F9FFFF;
 }
 
 
@@ -65,13 +72,13 @@ html body {
 Selecteur pour une class*/
 
 .valid {
-    background-color: yellowgreen;
-    border: 2px green solid;
+    background-color: $yellowgreen;
+    border: 2px $green solid;
 }
 
 .invalid {
-  background-color: pink;
-  border: 2px red solid;
+  background-color: $pink;
+  border: 2px $red solid;
 }
 
 
