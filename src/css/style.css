@@ -1,9 +1,5 @@
-#banniere {
+.img-responsive {
   width: 100%;
-}
-
-#image2 {
-  float: right;
 }
 
 html body {
