@@ -1,7 +1,5 @@
 <?php
 
-//header('refresh:3; ../index.html');
-
 $message = ''; // Variable pour stocker les messages de succès ou d'erreur
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -15,8 +13,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 		$message = "Veuillez remplir tous les champs.";
 	} else {
 		// Adresse email où vous souhaitez recevoir les messages
-		$to = "q.vilcoque@gmail.com";
-		$headers = "From: $email";
+		$to = 'q.vilcoque@gmail.com';
+		$headers = 'From: $email';
 
 		if (mail($to, $objet, $messageBody, $headers)) {
 			$message = "Message envoyé avec succès !";
@@ -25,5 +23,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 		}
 	}
 }
+
+header('refresh:3; ../index.html');
 
 ?>
