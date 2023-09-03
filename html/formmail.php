@@ -1,27 +1,19 @@
 <?php
 
-$message = ''; // Variable pour stocker les messages de succès ou d'erreur
+$destinataire = "q.vilcoque@gmail.com";
+$sujet = $_POST['objet'];
+$message = $_POST['message'];
+$headers = 'From: $email';
+$headers .= "Content-Type: text/html; charset=UTF-8\r\n";
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
+// Utilisation de la fonction mail() pour envoyer l'e-mail
+$mail_envoye = mail($destinataire, $sujet, $message, $headers);
 
-	$email = $_POST['email'];
-	$subject = $_POST['objet'];
-	$messageBody = $_POST['message'];
-
-	// Validation rapide (vous pouvez ajouter plus de vérifications)
-	if (empty($email) || empty($objet) || empty($messageBody)) {
-		$message = "Veuillez remplir tous les champs.";
-	} else {
-		// Adresse email où vous souhaitez recevoir les messages
-		$to = 'q.vilcoque@gmail.com';
-		$headers = 'From: $email';
-
-		if (mail($to, $objet, $messageBody, $headers)) {
-			$message = "Message envoyé avec succès !";
-		} else {
-			$message = "Erreur lors de l'envoi du message.";
-		}
-	}
+// Vérification si l'e-mail a été envoyé avec succès
+if ($mail_envoye) {
+    echo "L'e-mail a été envoyé avec succès.";
+} else {
+    echo "L'envoi de l'e-mail a échoué.";
 }
 
 header('refresh:3; ../index.html');
