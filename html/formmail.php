@@ -1,21 +1,26 @@
 <?php
 
-$destinataire = "q.vilcoque@gmail.com";
-$sujet = $_POST['objet'];
-$message = $_POST['message'];
-$headers = 'From: $email';
-$headers .= "Content-Type: text/html; charset=UTF-8\r\n";
+//si le bouton envoyer a été cliqué
+if (isset($_POST["submit"])) {
+    //on recupère l'adresse email
+    $email = $_POST["email"];
+    //on recupère l'objet du message
+    $objet = $_POST["objet"];
+    //on recupère le message
+    $message = $_POST["message"];
 
-// Utilisation de la fonction mail() pour envoyer l'e-mail
-$mail_envoye = mail($destinataire, $sujet, $message, $headers);
-
-// Vérification si l'e-mail a été envoyé avec succès
-if ($mail_envoye) {
-    echo "L'e-mail a été envoyé avec succès.";
-} else {
-    echo "L'envoi de l'e-mail a échoué.";
+    $to = "q.vilcoque@gmail.com";
+    $headers = "From:" . $email;
+    //on envoie le message avec la fonction mail
+    if (mail($to, $objet, $message, $headers))
+    //si le message a été envoyé, on le confirme
+    {
+        echo " ton message est bien envoyé.";
+    }
+    //sinon on n'affiche un message d'erreur
+    else {
+        echo "Une erreur s'est produite";
+    }
 }
 
 header('refresh:3; ../index.html');
-
-?>
