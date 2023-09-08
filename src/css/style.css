@@ -8,6 +8,11 @@ html body {
   background-size: cover;
 }
 
+footer {
+  position: relative;
+  bottom: 0;
+}
+
 #couleur li:hover {
   background-color: gray;
 }

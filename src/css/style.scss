@@ -16,6 +16,11 @@ html body {
     background-size: cover;
 }
 
+footer {
+    position: relative;
+    bottom: 0;
+  }
+
 
 
 #couleur li:hover {
@@ -80,6 +85,12 @@ Selecteur pour une class*/
   background-color: $pink;
   border: 2px $red solid;
 }
+
+
+
+
+
+
 
 
 /*media query*/

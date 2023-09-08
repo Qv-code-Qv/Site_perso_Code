@@ -1,5 +1,4 @@
-
- // Execution de cette fonction lorsque le DOM sera entièrement chargé
+// Execution de cette fonction lorsque le DOM sera entièrement chargé
  $(document).ready(function() {
    // Masquage des réponses
    $(".reponse").hide();
@@ -27,3 +26,6 @@
  }, 'slow');
  return false;
  });
+
+
+
