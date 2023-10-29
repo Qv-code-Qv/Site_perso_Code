@@ -25,3 +25,7 @@ if (isset($_POST["submit"])) {
 
 
 ?>
+<?php
+header('Location: ../index.html');
+exit();
+?>
