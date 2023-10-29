@@ -23,6 +23,6 @@ if (isset($_POST["submit"])) {
     }
 }
 
-header('refresh:3; ../index.html');
-exit;
+header('Location: ../index.html');
+exit();
 ?>
