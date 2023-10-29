@@ -15,7 +15,6 @@ if (isset($_POST["submit"])) {
     if (mail($to, $objet, $message, $headers))
     //si le message a été envoyé, on le confirme
     {
-        echo " ton message est bien envoyé.";
         header('refresh:3; ../index.html');
     }
     //sinon on n'affiche un message d'erreur
